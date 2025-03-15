@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <header>
+        <h1>Outras formatações</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Código-fonte</h2>
+            <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+            <pre>  <!-- Essa tag mantém um texto pré formatado (mantém a formatação) -->
+                <code>  <!-- A tag <code> transforma texto em letras monoespaçadas com semântica para código fonte -->
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else
+    print(f'O número {num} é ÍMPAR')
+print('Fim do programa')
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Citações</h2>  <!-- Citações simples -->
+            <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>  <!-- A tag <q> significa quote, que significa citação, é semântico -->
+            
+            <h3>Citações completas</h2>
+            <p>Como já dizia Bill Gates:</p>  <!-- Citações em blocos, <blockquote cite="URL da citação"> tem significado semântico além -->
+            <blockquote cite="https://exame.com/carreira/10-frases-de-bill-gates-para-inspirar-sua-carreira/">
+                Escolho uma pessoa preguiçosa para desenvolver um trabalho árduo. Por causa da preguiça, ela vai descobrir um meio simples de resolver o problema.
+            </blockquote>
+        </section>
+        
+        <section>
+            <h2>Abreviações</h2>
+            <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+        </section>
+
+        <section>
+            <h2>Texto invertido</h2>
+            <p><bdo dir="rtl">subi no onibus</bdo></p>  <!-- bidirectional override (inverter texto bidirecionalmente) -->
+        </section>
+    </main>
+</body>
+</html>
