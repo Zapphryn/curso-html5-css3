@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas</title>
+    <style>
+        .sublistas {
+            list-style-type: lower-alpha;
+        }
+
+        .square {
+            list-style: square;
+        }
+    </style>
 </head>
 <body>
     
@@ -34,6 +43,63 @@
                 <li>Alface</li>
                 <li>Arroz</li>
             </ul>
+        </section>
+
+        <section>
+            <h2>Minhas linguages favoritas</h2>
+            <ol>
+                <li>Antigas</li>
+                <ol class="sublistas">
+                    <li>Python</li>
+                    <li>Clipper</li>
+                    <li>Visual Basic</li>
+                </ol>
+
+                <li>Novas</li>
+                <ol class="sublistas">
+                    <li>Python</li>
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                </ol>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Meus jogos favoritos</h2>
+            <ol>
+                <li>NES</li>
+                <ul class="square">
+                    <li>Mario Bros</li>
+                    <li>Ninja Gaiden</li>
+                </ul>
+
+                <li>SNES</li>
+                <ul class="square">
+                    <li>Mario</li>
+                    <li>Donkey Kong</li>
+                </ul>
+
+                <li>PlayStation</li>
+                <ul class="square">
+                    <li>Black</li>
+                    <li>Medal of Honor</li>
+                </ul>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Lista de Definições</h2>
+            <dl>  <!-- Definition List (Lista de Definição) -->
+                <dt>HTML</dt>  <!-- Definition Term (Termo da definição) -->
+                <dd>Linguagem de marcação de hipertextos.</dd>  <!-- Definition Description (Descrição da Definição) -->
+
+                <dt>CSS</dt>
+
+                <dd>Linguagem de marcação de folhas de estilo em cascatas.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação multiparadigma de tipagem dinâmica voltada a desenvolvimento web.</dd>
+            </dl>
         </section>
     </main>
 
