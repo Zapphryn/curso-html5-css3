@@ -1,0 +1,6 @@
+.circular {
+    width: 150px;  /* Largura */
+    height: 150px;  /* Altura */
+    border-radius: 50%;  /* Deixa a imagem ciruclar */
+    object-fit: cover;  /* Garante que a imagem preencha o círculo */
+}
