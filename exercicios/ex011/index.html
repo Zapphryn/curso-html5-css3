@@ -15,5 +15,16 @@
         <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
         <img src="images/foto-g.png" alt="Imagem grande">
     </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio src="media/audio.m4a" controls autoplay></audio>  <!-- Primeira forma -->
+
+    <audio preload="auto" autoplay controls loop>  <!-- Segunda forma -->
+        <source src="media/audio.m4a" type="audio/mp4">
+        <source src="media/audio.mp3" type="audio/mpeg">
+        <p>Seu dispositivo não foi possível de reproduzir o áudio</p>  <!-- Esse parágrafo só será exibido se nenhuma das opções acima conseguir ser carregadas -->
+    </audio>
 </body>
 </html>
