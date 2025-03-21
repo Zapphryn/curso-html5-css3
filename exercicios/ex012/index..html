@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!-- <video src="media/meu-video.mp4" width="500px" controls></video> FORMA SIMPLES -->
+
+     <video width="500px" controls poster="images/Eu.png">  <!-- Forma mais perfomática para o usuário, multiplos arquivos -->
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <source src="media/meu-video-handbrake.mp4" type="video/mp4">  <!-- Poderia ser outro formato de vídeo -->
+        Seu navegador não suporta esse vídeo.  <!-- Só será exibido se o navegador não conseguir carregar o vídeo -->
+     </video>
+</body>
+</html>
